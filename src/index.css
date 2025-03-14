@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+html {
+    scrollbar-width: none;
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+:root {
+    --background: #f0f0f1; /* Light background */
+    --sec_background: #ee7f10; /* Dark secondary background */
+    --text: #020e1a; /* Primary text color */
+    --sec_text: #222223; /* Secondary text color */
+    --gradient-main: linear-gradient(to right bottom, #f9b330, #e19f2a, #ca8c24, #b27a1f, #9b6819);
+    --h-background: linear-gradient(to right top, #e19e20, #d5931c, #c98818, #bd7d13, #b1720f);
+    --sec_gradient: linear-gradient(to bottom, #e09c1c, #e4a027, #e8a330, #eca738, #f0ab40);
+    
+}
+
+/* @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #121212; 
+      --sec_background: #1e1e1e;
+      --text: #ffffff; 
+      --sec_text: #b3b3b3; 
+    }
+} */
+
+
+body{
+    background-image: var(--gradient-main);
+    color: var(--text);
+}
+
+
+h1{
+    color: black;
+}
+
+
+
+@layer utilities {
+    .txt-shadow-sm{
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .txt-shadow-lg{
+        text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .txt-shadow-xl{
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+
